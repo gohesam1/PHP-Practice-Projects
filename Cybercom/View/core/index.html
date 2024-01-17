@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+  	a{
+  		font-size: 25px;
+  	}
+  	li{
+  		margin-left: 15px;
+
+  	}
+  </style>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+	  <ul class="navbar-nav">
+	  	<li class="nav-item active">
+	  		<a class="nav-link" href="<?php echo $this->getUrl()->getUrl('index','index');?>">Home</a>
+	    </li>
+	  	<li class="nav-item active">
+	      <button class="btn btn-success" onclick="base.setUrl('<?php echo $this->getUrl()->getUrl('gridHtml','admin');?>').resetParams().load()">Admin</button>
+	    </li>
+	    <li class="nav-item active">
+	      <button class="btn btn-success" onclick="base.setUrl('<?php echo $this->getUrl()->getUrl('gridHtml','product');?>').resetParams().load()">Product</button>
+	    </li>
+	    <li class="nav-item active">
+	      <button class="btn btn-success" onclick="base.setUrl('<?php echo $this->getUrl()->getUrl('gridHtml','category');?>').resetParams().load()">Category</button>
+	    </li>
+	    <li class="nav-item active">
+	      <button class="btn btn-success" onclick="base.setUrl('<?php echo $this->getUrl()->getUrl('gridHtml','customer');?>').resetParams().load()">Customer</button>
+	    </li>
+	     <li class="nav-item active">
+	      <button class="btn btn-success" onclick="base.setUrl('<?php echo $this->getUrl()->getUrl('gridHtml','Customer_Group');?>').resetParams().load()">Customer Group</button>
+	    </li>
+	    <li class="nav-item active">
+	       <button class="btn btn-success" onclick="base.setUrl('<?php echo $this->getUrl()->getUrl('gridHtml','shipping');?>').resetParams().load()">Shipping</button>
+	    </li>
+	    <li class="nav-item active">
+	       <button class="btn btn-success" onclick="base.setUrl('<?php echo $this->getUrl()->getUrl('gridHtml','payment');?>').resetParams().load()">Payment</button>
+	    </li>
+	    <li class="nav-item active">
+	       <button class="btn btn-success" onclick="base.setUrl('<?php echo $this->getUrl()->getUrl('gridHtml','attribute');?>').resetParams().load()">Attribute</button>
+	    </li>
+	  </ul>
+	</nav>
+
+
+</body>
+</html>
